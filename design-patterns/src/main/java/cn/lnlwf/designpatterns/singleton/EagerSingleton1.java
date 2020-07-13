@@ -1,6 +1,5 @@
-package cn.lnlwf.singleton;
+package cn.lnlwf.designpatterns.singleton;
 
-import javax.annotation.Resource;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.ResourceBundle;
@@ -29,13 +28,6 @@ public class EagerSingleton1 {
     static {
         ResourceBundle bundle = ResourceBundle.getBundle("singleton");
         String name = bundle.getString("name");
-//        Properties properties = new Properties();
-//        try {
-//            properties.load(Resource.class.getClassLoader().getResourceAsStream("singleton"));
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//        String name = properties.getProperty("name");
         INSTANCE = new EagerSingleton1(name);
     }
 

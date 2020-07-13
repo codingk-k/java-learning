@@ -1,4 +1,4 @@
-package cn.lnlwf;
+package cn.lnlwf.base;
 
 /**
  * Hello world!

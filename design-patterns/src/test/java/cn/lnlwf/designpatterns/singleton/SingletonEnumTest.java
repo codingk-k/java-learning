@@ -1,8 +1,6 @@
-package cn.lnlwf.singleton;
+package cn.lnlwf.designpatterns.singleton;
 
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class SingletonEnumTest {
 

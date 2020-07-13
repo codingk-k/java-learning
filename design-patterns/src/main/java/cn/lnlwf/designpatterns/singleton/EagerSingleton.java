@@ -1,6 +1,4 @@
-package cn.lnlwf.singleton;
-
-import jdk.nashorn.internal.objects.annotations.Getter;
+package cn.lnlwf.designpatterns.singleton;
 
 /**
  * 饿汉式：

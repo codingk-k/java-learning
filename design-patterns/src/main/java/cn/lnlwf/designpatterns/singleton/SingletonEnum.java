@@ -1,6 +1,7 @@
-package cn.lnlwf.singleton;
+package cn.lnlwf.designpatterns.singleton;
 
 /**
+ * 饿汉式：
  * 枚举表示对象是有限的，可以限制为一个即为单例
  * @author liuning
  * @date 2020/7/11.
