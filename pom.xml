@@ -16,6 +16,7 @@
   <modules>
     <module>java-base</module>
     <module>design-patterns</module>
+    <module>java-advanced</module>
   </modules>
   <dependencies>
     <dependency>
