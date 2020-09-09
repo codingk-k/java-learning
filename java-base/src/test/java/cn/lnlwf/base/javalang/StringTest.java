@@ -3,6 +3,9 @@ package cn.lnlwf.base.javalang;
 import jdk.nashorn.internal.runtime.regexp.joni.ast.StringNode;
 import org.junit.Test;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @author liuning
  * @date 2020/7/13.
@@ -33,6 +36,17 @@ public class StringTest {
         System.out.println("c:"+c);
         System.out.println("d:"+d);
         System.out.println("e:"+e);
+    }
+
+    @Test
+    public void hashmapTest(){
+        Object s = "sss";
+        int a ;
+        System.out.println((a = s.hashCode()) ^ (a >>> 16));
+//        Map<String,String> test = new HashMap<String, String>(2);
+//        test.put("sss","sdf");
+//        test.put("1423","ldngl");
+//        System.out.println("===========");
     }
 
 }
