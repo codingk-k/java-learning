@@ -13,11 +13,18 @@
     Java 学习笔记，Java基础，javaIO，排序算法，设计模式，JVM
   </description>
 
+  <name>java-learning</name>
+
+  <properties>
+    <java.version>1.8</java.version>
+  </properties>
+
   <modules>
     <module>java-base</module>
     <module>design-patterns</module>
     <module>java-advanced</module>
   </modules>
+
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -32,5 +39,17 @@
     </dependency>
   </dependencies>
 
-  <name>java-learning</name>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+          <encoding>UTF-8</encoding>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>
