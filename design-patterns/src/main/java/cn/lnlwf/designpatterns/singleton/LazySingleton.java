@@ -7,7 +7,7 @@ import java.util.ResourceBundle;
  * 什么时候用到什么时候初始化对象
  * 1）构造器私有化
  * 2）静态变量保存这个实例
- * 3）是线程不安全的
+ * 3）是线程不安全的（需要同步代码）
  * 3）提供一个public静态方法获取这个实例
  * @author liuning
  * @date 2020/7/11.
@@ -30,11 +30,6 @@ public class LazySingleton {
         if(lazySingleton == null){
             synchronized (LazySingleton.class){
                 if (lazySingleton == null) {
-//                    try {
-//                        Thread.sleep(1000);
-//                    } catch (InterruptedException e) {
-//                        e.printStackTrace();
-//                    }
                     lazySingleton = new LazySingleton();
                 }
             }

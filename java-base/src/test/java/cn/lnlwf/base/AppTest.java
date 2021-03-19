@@ -1,10 +1,7 @@
 package cn.lnlwf.base;
 
-import static org.junit.Assert.assertTrue;
-
 import org.junit.Test;
 
-import java.util.Collection;
 
 /**
  * Unit test for simple App.
@@ -17,6 +14,6 @@ public class AppTest
     @Test
     public void shouldAnswerWithTrue()
     {
-        assertTrue( true );
+
     }
 }

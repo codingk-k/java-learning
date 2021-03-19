@@ -6,6 +6,7 @@ public class SingletonEnumTest {
 
     @Test
     public void singletonEnumTest(){
-        System.out.println(SingletonEnum.INSTANCE);
+        SingletonEnum wangWu = SingletonEnum.WANG_WU;
+        System.out.println(wangWu.toString());
     }
 }

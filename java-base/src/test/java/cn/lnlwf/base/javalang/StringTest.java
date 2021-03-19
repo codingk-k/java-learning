@@ -1,10 +1,6 @@
 package cn.lnlwf.base.javalang;
 
-import jdk.nashorn.internal.runtime.regexp.joni.ast.StringNode;
 import org.junit.Test;
-
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * @author liuning

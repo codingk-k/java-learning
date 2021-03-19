@@ -8,5 +8,25 @@ package cn.lnlwf.designpatterns.singleton;
  * @email 24333389385@qq.com
  */
 public enum  SingletonEnum {
-    INSTANCE;
+    /**
+     * 用户
+     */
+    WANG_WU("王五","男","北京");
+
+    private String name, sex,address;
+
+    private SingletonEnum(String name, String sex, String address) {
+        this.name = name;
+        this.sex = sex;
+        this.address = address;
+    }
+
+    @Override
+    public String toString() {
+        return "SingletonEnum{" +
+                "name='" + name + '\'' +
+                ", sex='" + sex + '\'' +
+                ", address='" + address + '\'' +
+                '}';
+    }
 }
